@@ -36,6 +36,6 @@ optional:
   # you can update file names here
   input_file_name: input.json
   output_file_name: output.json
-  runtime_file_name: config.yaml
+  runtime_file_name: inferless-runtime-config.yaml
 model_url: https://github.com/rbgo404/whisper-large-v3
 provider: GITHUB
