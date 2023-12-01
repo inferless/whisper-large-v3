@@ -1,0 +1,14 @@
+{
+    "outputs": [
+      {
+        "data": [
+          "data"
+        ],
+        "name": "transcribed_output",
+        "shape": [
+          1
+        ],
+        "datatype": "BYTES"
+      }
+    ]
+}
