@@ -17,7 +17,7 @@ configuration:
   # you can find it by running `inferless volume list` or create one with `inferless volume create -n {VOLUME_NAME}`
   # NOTE: this is not yet supported for Serverless
   custom_volume_id: ''
-  custom_volume_name: ''
+  custom_volume_url: ''
 
   gpu_type: T4
   inference_time: '180'
