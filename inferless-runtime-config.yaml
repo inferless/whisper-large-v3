@@ -5,4 +5,5 @@ build:
     - "ffmpeg-python"
     - "ffmpeg"
     - "transformers"
+    - "accelerate"
     - "torch"
