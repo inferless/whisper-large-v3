@@ -1,6 +1,6 @@
 version: 1.0.0
 
-name: whisper-hindi-large
+name: whisper-large-v3
 import_source: GIT
 
 # you can choose the options between ONNX, TENSORFLOW, PYTORCH
@@ -37,5 +37,5 @@ optional:
   input_file_name: input.json
   output_file_name: output.json
   runtime_file_name: inferless-runtime-config.yaml
-model_url: https://github.com/inferless/whisper-hindi-large.git
+model_url: https://github.com/inferless/whisper-large-v3.git
 provider: GITHUB
