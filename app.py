@@ -1,22 +1,19 @@
-import json
-import numpy as np
-import torch
-from transformers import pipeline
+from faster_whisper import WhisperModel
 
 class InferlessPythonModel:
         
     def initialize(self):
-        self.generator = pipeline(
-            "automatic-speech-recognition",
-            model="openai/whisper-large-v3", chunk_length_s=30, batch_size=8,
-            torch_dtype=torch.float16,
-            device_map="cuda:0",
-        )
+        model_size = "large-v3"
+        # Run on GPU with FP16
+        self.model = WhisperModel(model_size, device="cuda", compute_type="float16")
 
     def infer(self, inputs):
+        
         audio_url = inputs["audio_url"]
-        pipeline_output = self.generator(audio_url, )
-        return {"transcribed_output": pipeline_output["text"] }
+        segments, info = self.model.transcribe(audio_url, beam_size=5)
+        text = ''.join([segment.text for segment in segments])
+        
+        return {"transcribed_output":text}
 
     def finalize(self):
-        self.generator = None
+        pass
