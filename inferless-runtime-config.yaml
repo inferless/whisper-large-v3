@@ -2,8 +2,5 @@ build:
   system_packages:
     - "ffmpeg"
   python_packages:
-    - "ffmpeg-python"
-    - "ffmpeg"
-    - "transformers"
-    - "accelerate"
-    - "torch"
+    - "faster-whisper==1.0.0"
+    - "torch==2.2.1"
