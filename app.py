@@ -4,7 +4,6 @@ class InferlessPythonModel:
         
     def initialize(self):
         model_size = "large-v3"
-        # Run on GPU with FP16
         self.model = WhisperModel(model_size, device="cuda", compute_type="float16")
 
     def infer(self, inputs):
