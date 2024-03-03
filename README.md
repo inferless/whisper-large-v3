@@ -46,9 +46,9 @@ The following is a sample Input and Output JSON for this model which you can use
   "inputs": [
     {
       "data": [
-        "What is Quantum Computing?"
+        "http://thepodcastexchange.ca/s/Porsche-Macan-July-5-2018-1.mp3"
       ],
-      "name": "prompt",
+      "name": "audio_url",
       "shape": [
         1
       ],
@@ -66,7 +66,7 @@ The following is a sample Input and Output JSON for this model which you can use
       "data": [
         "data"
       ],
-      "name": "generated_result",
+      "name": "transcribed_output",
       "shape": [
         1
       ],
@@ -87,9 +87,9 @@ curl --location '<your_inference_url>' \
                 "inputs": [
                     {
                     "data": [
-                        "What is Quantum Computing?"
+                        "http://thepodcastexchange.ca/s/Porsche-Macan-July-5-2018-1.mp3"
                     ],
-                    "name": "prompt",
+                    "name": "audio_url",
                     "shape": [
                         1
                     ],
