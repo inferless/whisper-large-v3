@@ -3,7 +3,7 @@ Whisper-large-v3 is a pre-trained model for automatic speech recognition (ASR) a
 
 ## Deploy Whisper-large-v3 using Inferless:
 - Deployment of Whisper-large-v3 model using [Faster-Whisper](https://github.com/SYSTRAN/faster-whisper).
-- By using the vLLM, you can expect an average latency of 1.07 sec.
+- By using the Faster-Whisper, you can expect an average latency of 0.55 sec.
 
 ---
 ## Prerequisites
@@ -15,8 +15,8 @@ Whisper-large-v3 is a pre-trained model for automatic speech recognition (ASR) a
 ## Quick Start
 Here is a quick start to help you get up and running with this template on Inferless.
 
-### Download the config-vllm and Create a runtime 
-Get started by downloading the config-vllm.yaml file and go to Inferless dashboard and create a custom runtime 
+### Download the inferless-runtime-config and Create a runtime 
+Get started by downloading the inferless-runtime-config.yaml file and go to Inferless dashboard and create a custom runtime 
 
 Quickly add this as a Custom runtime
 
