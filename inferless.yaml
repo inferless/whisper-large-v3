@@ -26,6 +26,7 @@ configuration:
   max_replica: '1'
   min_replica: '0'
   scale_down_delay: '600'
+  region: region-1
 env:
   # Add your environment variables here
   # ENV: 'PROD'
