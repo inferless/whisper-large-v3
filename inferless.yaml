@@ -27,6 +27,8 @@ configuration:
   min_replica: '0'
   scale_down_delay: '600'
   region: region-1
+  vcpu: '3'
+  ram: '20'
 env:
   # Add your environment variables here
   # ENV: 'PROD'
