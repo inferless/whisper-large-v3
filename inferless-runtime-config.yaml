@@ -4,3 +4,4 @@ build:
   python_packages:
     - "faster-whisper==1.0.0"
     - "torch==2.2.1"
+    - "ctranslate2==4.4.0"
